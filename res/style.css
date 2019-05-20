@@ -1,0 +1,106 @@
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 80%;
+ 
+}
+html {
+    overflow-y:scroll;
+}
+.mainTitle{
+  float: left;    
+  font-size: 36px;
+  margin: 0;
+  font-family: sans-serif;
+  color: #3b4151;	
+}
+.module{
+  font-size: small;
+  padding-top: 1.5%;
+  float: left;
+  margin-left: 1%;
+  color: red;
+}
+
+.baseUrl{
+
+    font-size: 12px;
+    font-weight: 300!important;
+    margin: 0;
+    font-family: monospace;
+    color: #3b4151;
+}
+.requestBox{
+  font-size: 14px;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 6px 15px;
+    text-align: center;
+    border-radius: 3px;
+   
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    font-family: sans-serif;
+    color: #fff;
+}
+.getGroupStyle{
+  border: 1px solid;
+  border-color:lightblue !important;
+  padding: 1%;
+  background: #dce6f1 !important;
+}
+.getBColor{
+   background: #61affe !important;
+}
+.getCardBgcolor{
+  border: 1px solid ;
+  border-color:lightblue !important;
+  background-color: #dce6f1 !important;
+}
+.postGroupStyle{
+  border: 1px solid;
+  border-color: #fca130 !important;
+  padding: 1%;
+  background: rgba(252,161,48,.1) !important;
+}
+.postBColor{
+  
+    background: #fca130;
+}
+.postCardBgcolor{
+  border-color: #fca130 !important;
+  border: 1px solid;
+    background: rgba(252,161,48,.1) !important;
+}
+.addBtn{
+
+  border: none;
+  color: white;
+  padding: 5px;
+  background:rgb(179, 109, 109);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 1%;
+  cursor: pointer !important;
+  border-radius: 20%;
+}
+.addBtnProperty{
+float: right;  
+margin-top: -25px;
+}
+.red{
+   background:rgb(179, 109, 109);
+}
+.button {
+  border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer !important;
+    border-radius: 25%;
+}

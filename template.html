@@ -1,0 +1,119 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="res/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="res/apiDoc.js"></script>
+</head>
+
+<body>
+  <div>
+    <iframe src="index.html" style="height: 100%;
+    float: left;"></iframe>
+  </div>
+  <div style="margin-left: 24%;" id="mainDiv">
+    <div style="height: 8%;margin-top: 1%;">
+      <span>
+        <h2 id="mainTitle" contentEditable=true class="mainTitle dummy">Rest
+          API Name</h2>
+      </span><span>
+        <h4 id="module" contentEditable=true placeholder="default text here" class="module dummy">Collection
+          Module</h4>
+      </span>
+      <span style="float: right;padding-right: 3%;">
+        <i class="fa fa-floppy-o fa-2x" aria-hidden="true" onclick="download()" title="save and export"></i>
+        <i class="fa fa-search-plus fa-2x" aria-hidden="true" onclick="showPreview()" title="preview"></i>
+      </span>
+    </div>
+    <div>
+      <pre class="base-url">[ Base URL: <span id="baseUrl" contentEditable=true class="dummy"> http://getpaid.com </span>]</pre>
+    </div>
+    <div>
+      <p id="description" contentEditable=true class="dummy">Enter description about the API. </p>
+    </div>
+    <div style="margin-left: 95%;">
+      <button class="addBtn" onclick="addNewRquest()" id="newRquest">Add</button>
+    </div>
+    <div id="accordion">
+      <div class="card" id="parentId">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+          <div class="getCardBgcolor card-header " id="requestHeader">
+            <span style="padding-left: 2%;" class="requestBox getBColor dummy" id="requestType" contentEditable=true>
+              Get</span>
+            <span style="margin-left: 2%;color: black;" class="dummy" id="uri" contentEditable=true><b>/login</b></span>
+            <span style="margin-left: 2%;color: black;" class="dummy" id="uriDesc" contentEditable=true>Enter little
+              description
+              about
+              uri</span>
+          </div>
+        </a>
+
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+
+            <div>
+              <div style=" padding: 1%;"> <b>Parameters</b></div>
+              <div class="getGroupStyle" id="group">
+                <div>
+                  <div style="width: 30%;  float: left;"><b>Name </b></div>
+                  <div style="width: 50%;"><b>Description </b></div>
+                  <div class="addBtnProperty">
+                    <i class="fa fa-plus" style="font-size:24px" onclick="addNewProperty()"></i>
+                  </div>
+                  <hr />
+                  <div id="paramGrp">
+                    <div>
+                      <div style="width: 30%;  float: left;" id="code1" class="dummy" contentEditable=true>propertyName
+                      </div>
+                      <div style="padding-left: 29%;margin-left: 2%;">
+                        <p id="response" contentEditable=true class="dummy"> Description about the property</p>
+                      </div>
+                      <div style=" float: right;margin-top: -3%;">
+                        <i class="fa fa-remove" style="font-size:24px" onclick="remove(this)"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div style=" padding: 1%;"><b>Response</b> <span style="float: right;"><b>Response content type :
+                    application/json</b></span></div>
+              <div class="getGroupStyle" id="responseGroup">
+                <div>
+                  <div style="width: 30%;  float: left;"><b>Code </b></div>
+                  <div style="width: 50%;"><b>Description </b></div>
+                  <div class="addBtnProperty">
+                    <i class="fa fa-plus" style="font-size:24px" onclick="addNewResponse()"></i>
+                  </div>
+                  <hr />
+                  <div id="reponseGrp">
+                    <div>
+                      <div style="width: 30%;  float: left;" id="code1" contentEditable=true class="dummy">default
+                      </div>
+                      <div style="padding-left: 29%;">
+                        <p id="response" contentEditable=true class="dummy">successful operation </p>
+                      </div>
+                      <div style=" float: right;margin-top: -3%;">
+                        <i class="fa fa-remove" style="font-size:24px" onclick="remove(this)"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
